@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+</head>
+<body>
+
+   <div class="container">
+    <h2>Register</h2>
+    <form action="login.html" method="get">
+
+
+    <label>First Name :<input type="text" placeholder="Enter your name" required></label><br></br>
+    <label>Last Name: <input type="text" name="Lastname" required> </label><br></br>
+    <label>Email: <input type="email" name="email" required></label><br></br>
+    <label>Age: <input type="number" name="age" required></label><br></br>
+    <label>Gender: <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" value="female" > Female
+    <input type="radio" value="others" > Others  </label><br></br>
+    
+    <label for="city">City</label>
+    <select name="city" ><option value=""> --Select City</option>
+    <option value="Bangalore"> Bangalore</option>
+    <option value="Chennai"> Chennai</option>
+    <option value="Mumbai"> Mumbai</option>
+     
+     <p>preferredLanguage:</p>
+
+<label>
+  <input type="checkbox" name="preferredLanguage" value="en">
+  English
+</label><br>
+
+<label>
+  <input type="checkbox" name="preferredLanguage" value="es">
+  Spanish
+</label><br>
+
+<label>
+  <input type="checkbox" name="preferredLanguage" value="fr">
+  French
+</label><br>
+
+<label>
+  <input type="checkbox" name="preferredLanguage" value="de">
+  German
+</label><br>
+
+<label>
+  <input type="checkbox" name="preferredLanguage" value="zh">
+  Chinese
+</label><br>
+
+<label>Password: <input type="text" name="password" required> </label><br></br>
+<label>Confirm Password: <input type="password" name="ConfirmPassword" required> </label> <br></br>
+
+<button type="submit"> Register</button> <br></br>
+
+</form>
+</body>
+</html>

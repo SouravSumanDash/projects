@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Direction Animations</title>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: coral;
+      position: absolute;
+    }
+
+    .move-left {
+      animation: moveLeft 2s infinite alternate;
+    }
+
+    .move-right {
+      animation: moveRight 2s infinite alternate;
+    }
+
+    .move-top {
+      animation: moveTop 2s infinite alternate;
+    }
+
+    .move-bottom {
+      animation: moveBottom 2s infinite alternate;
+    }
+
+    @keyframes moveLeft {
+      from { left: 100px; }
+      to { left: 0px; }
+    }
+
+    @keyframes moveRight {
+      from { left: 0px; }
+      to { left: 100px; }
+    }
+
+    @keyframes moveTop {
+      from { top: 100px; }
+      to { top: 0px; }
+    }
+
+    @keyframes moveBottom {
+      from { top: 0px; }
+      to { top: 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box move-left" style="top: 0px;"></div>
+  <div class="box move-right" style="top: 60px;"></div>
+  <div class="box move-top" style="left: 60px;"></div>
+  <div class="box move-bottom" style="left: 120px;"></div>
+
+</body>
+</html>
