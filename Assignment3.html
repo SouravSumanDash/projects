@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Management UI</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #a445b2, #d41872, #ff0066);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .task-container {
+      background: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .task-container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .filters span {
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .filters .active {
+      color: red;
+      font-weight: bold;
+    }
+
+    .clear-btn {
+      background: linear-gradient(to right, #ff416c, #ff4b2b, #1e90ff);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .task-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .task-list li {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .task-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="task-container">
+  <input type="text" placeholder="Add a New Task + Enter" />
+
+  <div class="filters">
+    <div>
+      <span class="active">All</span>
+      <span>Pending</span>
+      <span>Completed</span>
+    </div>
+    <button class="clear-btn">Clear All</button>
+  </div>
+
+  <ul class="task-list">
+    <li><input type="checkbox"> task 2</li>
+    <li><input type="checkbox"> task 3</li>
+  </ul>
+</div>
+
+</body>
+</html>

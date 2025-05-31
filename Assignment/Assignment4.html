@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xaipro Rides 14T Product Card</title>
+  <style>
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    .product-image {
+      position: relative;
+    }
+
+    .product-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .heart-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .heart-icon:hover {
+      color: grey;
+    }
+
+    .product-details {
+      padding: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .product-price {
+      color: green;
+      font-weight: bold;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 5px;
+    }
+
+    .discount {
+      color: #f00;
+      margin-left: 5px;
+    }
+     .bestseller-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="product-card">
+  <div class="product-image">
+    <img src="product.webp" alt="Xaipro Rides">
+    <span class="heart-icon">&#9829;</span> <!-- Unicode heart -->
+      <div class="bestseller-badge">Bestseller</div>
+  </div>
+  <div class="product-details">
+    <div class="product-title">Xaipro Rides 14T Rocky Skyblue 14T (inch) Road Cycle</div>
+    <div>Single Speed, Blue, Rigid</div>
+    <div>
+      <span style="background: #4CAF50; color: white; padding: 2px 4px; border-radius: 4px;">3.8 ★</span>
+      (17,037)
+    </div>
+    <div>
+      <span class="product-price">₹2,235</span>
+      <span class="old-price">₹5,999</span>
+      <span class="discount">62% off</span>
+    </div>
+    <div style="background: #c8f5c2; color: green; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-top: 5px;">
+      Hot Deal
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

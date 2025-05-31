@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bestseller Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin-bottom: 10px;
+    }
+
+    .bestseller-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* align to left */
+    }
+
+    .bestseller-text {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .heart-icon {
+      font-size: 24px;
+      color: red;
+      cursor: pointer;
+    }
+
+    .bestseller-image {
+      max-width: 300px;
+      height: auto;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="bestseller-container">
+      <div class="bestseller-text">Bestseller</div>
+      <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/cycle/j/e/4/14t-rocky-skyblue-14-13-xaipro-rides-60-single-speed-original-imahymzmzg3mhptg.jpeg?q=70&crop=false" alt="Bestseller Image" class="bestseller-image"/>
+    </div>
+
+    <div class="heart-icon">&#10084;</div>
+  </div>
+
+</body>
+</html>
