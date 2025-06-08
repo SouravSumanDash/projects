@@ -6,8 +6,10 @@
   <title>Task Management UI</title>
   <style>
     body {
-      background: linear-gradient(135deg, #a445b2, #d41872, #ff0066);
+      /* Black background for the body */
+      background: linear-gradient(135deg, #d441d4, #845ec2, #00c9ff);
       display: flex;
+      border:10px solid black;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -21,10 +23,11 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+       
     }
 
     .task-container input[type="text"] {
-      width: 100%;
+      width: 200px;
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 5px;
@@ -40,7 +43,7 @@
     }
 
     .filters span {
-      cursor: pointer;
+      cursor:pointer;
       margin: 0 5px;
     }
 
@@ -50,7 +53,7 @@
     }
 
     .clear-btn {
-      background: linear-gradient(to right, #ff416c, #ff4b2b, #1e90ff);
+      background: linear-gradient(to right, #d441d4, #845ec2, #00c9ff);
       color: white;
       border: none;
       padding: 5px 10px;
@@ -63,18 +66,33 @@
       padding: 0;
       margin: 0;
     }
+    .box{
+      background-color: black;
+    }
 
     .task-list li {
       display: flex;
       align-items: center;
       padding: 5px 0;
-      border-bottom: 1px solid #ddd;
+      border-bottom: none;
     }
 
     .task-list input[type="checkbox"] {
       margin-right: 10px;
     }
 
+    .task-list .divider {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      margin: 10px 0;
+      list-style: none;
+    }
+
+    .task-list .long-line {
+      width: 110%;
+      transform: translateX(-5%);
+      border-bottom: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
@@ -84,15 +102,17 @@
 
   <div class="filters">
     <div>
-      <span class="active">All</span>
-      <span>Pending</span>
+      <span>All</span>
+      <span class="active">Pending</span>
       <span>Completed</span>
     </div>
     <button class="clear-btn">Clear All</button>
   </div>
 
   <ul class="task-list">
+    <li class="divider long-line"></li>
     <li><input type="checkbox"> task 2</li>
+    <li class="divider"></li>
     <li><input type="checkbox"> task 3</li>
   </ul>
 </div>

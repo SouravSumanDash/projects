@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seller Page - Myntra App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Add Product</h2>
+    <form id="productForm">
+      <div class="mb-3">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="url" class="form-control" id="image" required>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price (₹)</label>
+        <input type="number" class="form-control" id="price" required>
+      </div>
+      <div class="mb-3">
+        <label for="desc" class="form-label">Description</label>
+        <textarea class="form-control" id="desc" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Save Product</button>
+    </form>
+    <a href="myntraviewer.html" class="btn btn-link mt-3 d-block">Go to Viewer Page</a>
+  </div>
+
+  <script>
+    const form = document.getElementById('productForm');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const image = document.getElementById('image').value;
+      const price = document.getElementById('price').value;
+      const desc = document.getElementById('desc').value;
+
+      const product = { image, price, desc };
+
+      // Save to localStorage
+      let products = JSON.parse(localStorage.getItem('products')) || [];
+      products.push(product);
+      localStorage.setItem('products', JSON.stringify(products));
+
+      alert("Product saved!");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
